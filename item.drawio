@@ -1,0 +1,166 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.7.8 Chrome/128.0.6613.36 Electron/32.0.1 Safari/537.36" version="24.7.8">
+  <diagram name="ページ1" id="CVDL1Krlui7HTQANblH1">
+    <mxGraphModel dx="3542" dy="1569" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-1" value="パターン1&lt;div&gt;動作モデルをjsonで作って解釈する。既存のシナリオ変換&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="40" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-2" value="パターン2&lt;div&gt;データを作りながら都度登録する&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="680" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-3" value="&lt;div&gt;RegisterScenario&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;引数：&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- 動作モデル群（n&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;ohlman::json）&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-5" target="3_WvbCSFTcX0JYTVrm3E-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-5" value="シナリオテーブル処理&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;jsonから動作モデルテーブルを抽出。シナリオ名を決定。&lt;/div&gt;&lt;div&gt;シナリオデータ（json）を作って格納し、DB&lt;span style=&quot;background-color: initial;&quot;&gt;へ登録。&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;払い出されたシナリオIDをシナリオデータへ格納&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="120" y="280" width="200" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-6" target="3_WvbCSFTcX0JYTVrm3E-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-6" value="シナリオ実行条件テーブル処理&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;今回は非サポート&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="120" y="640" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-7" target="3_WvbCSFTcX0JYTVrm3E-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-7" value="シナリオ詳細テーブル処理&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;jsonから動作モデル詳細テーブルを抽出。&lt;/div&gt;&lt;div&gt;動作モデルツリーの末端モデルのみを抽出してシナリオデータへ変換・格納&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-9" value="シナリオ登録API&lt;div&gt;引数：&lt;/div&gt;&lt;div&gt;- シナリオ名&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="400" y="320" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-11" value="シナリオ詳細登録API&lt;div&gt;引数&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- シナリオシーケンス&lt;/div&gt;&lt;div&gt;- シーケンス&lt;/div&gt;&lt;div&gt;- アイテム名&lt;/div&gt;&lt;div&gt;- アイテム値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="480" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-13" target="3_WvbCSFTcX0JYTVrm3E-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-13" value="シナリオ終了条件テーブル処理&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;今回は非サポート&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="120" y="800" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-14" value="シナリオ実行条件登録API&lt;div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- シナリオシーケンス&lt;/div&gt;&lt;div&gt;- 左辺値&lt;/div&gt;&lt;div&gt;- 演算子&lt;/div&gt;&lt;div&gt;- 右辺値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="640" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-16" value="シナリオ終了条件登録API&lt;div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- シナリオシーケンス&lt;/div&gt;&lt;div&gt;- 左辺値&lt;/div&gt;&lt;div&gt;- 演算子&lt;/div&gt;&lt;div&gt;- 右辺値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="400" y="800" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-18" value="パラメータテーブル処理&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;動作モデルをコピーしてシナリオデータに格納&lt;/div&gt;&lt;div&gt;最新のGIDを取得してインクリメントして、それを使う&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="120" y="960" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="3_WvbCSFTcX0JYTVrm3E-18" target="3_WvbCSFTcX0JYTVrm3E-20" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-20" value="パラメータ登録API&lt;div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- パラメータGID&lt;/div&gt;&lt;div&gt;- パラメータ名&lt;/div&gt;&lt;div&gt;- パラメータ値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="400" y="960" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-26" value="シナリオパラメータテーブル処理&lt;div&gt;&lt;br&gt;&lt;div&gt;動作モデルのパラメータテーブルをコピーする&lt;/div&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="120" y="1120" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" source="3_WvbCSFTcX0JYTVrm3E-26" target="3_WvbCSFTcX0JYTVrm3E-28" parent="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-28" value="&lt;div&gt;&lt;div&gt;シナリオパラメータテーブル処理&lt;/div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- 天候ID&lt;/div&gt;&lt;div&gt;- 路面ID&lt;/div&gt;&lt;div&gt;- パラメータGID&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="400" y="1120" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-34" value="&lt;div&gt;&lt;div&gt;&lt;div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &quot;operation_model&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &quot;name&quot;: &quot;移動&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &quot;nested_models&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;operation_model&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;name&quot;: &quot;ストレート移動&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; // &quot;nested_models&quot;: [],&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;parameter_switch_rules&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;weather_id&quot;: 1, // condition1&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;road_id&quot;: 1, // condition2&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;parameters&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;safety&quot;: &quot;1&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;emerge&quot;: &quot;2&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ],&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;start_condition&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;lv&quot;: &quot;xxx&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;operator&quot;: &quot;==&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;rv&quot;: &quot;yyy&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;finish_condition&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;lv&quot;: &quot;aaa&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;operator&quot;: &quot;==&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;rv&quot;: &quot;bbb&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;user_data&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;x&quot;: 1.0,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;y&quot;: 2.0,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;z&quot;: 3.0&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="-520" y="280" width="240" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-36" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-34">
+          <mxGeometry x="10" y="30" width="120" height="23.91" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-42" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-34">
+          <mxGeometry x="30" y="470" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-52" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-34">
+          <mxGeometry x="30" y="320" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-61" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-34">
+          <mxGeometry x="30" y="120" width="180" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-63" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-34">
+          <mxGeometry x="30" y="180" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-37" value="&lt;div&gt;&lt;div&gt;{&lt;/div&gt;&lt;div&gt;&amp;nbsp; &quot;scenario&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &quot;name&quot;: &quot;移動&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &quot;sequence&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;type&quot;: &quot;straight_run&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;details&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;x&quot;: 1,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;y&quot;: 2,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;z&quot;: 3&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;parameter_switch_rules&quot;: [&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;weather_id&quot;: 1,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;road_id&quot;: 1,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;parameters&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;safety&quot;: &quot;1&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;emergency&quot;: &quot;1&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; ],&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;start_condition&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;lv&quot;: &quot;xxx&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;operator&quot;: &quot;==&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;rv&quot;: &quot;yyy&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;finish_condition&quot;: {&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;lv&quot;: &quot;aaa&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;operator&quot;: &quot;==&quot;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &quot;rv&quot;: &quot;bbb&quot;&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; }&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp; },&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; ]&lt;/div&gt;&lt;div&gt;&amp;nbsp; }&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;container=1;recursiveResize=0;" vertex="1" parent="1">
+          <mxGeometry x="-240" y="280" width="240" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-38" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#b85450;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-37">
+          <mxGeometry x="10" y="30" width="120" height="23.91" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-49" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#6c8ebf;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-37">
+          <mxGeometry x="20" y="90" width="120" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-53" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#d6b656;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-37">
+          <mxGeometry x="20" y="304" width="120" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-55" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#82b366;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-37">
+          <mxGeometry x="30" y="170" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-66" value="" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#9673a6;strokeWidth=2;" vertex="1" parent="3_WvbCSFTcX0JYTVrm3E-37">
+          <mxGeometry x="30" y="220" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-39" value="シナリオ生成プログラムで、こんな感じのnlohman::jsonのインスタンスを作る。&lt;div&gt;データ構造を決める必要があるので無理かも？&lt;/div&gt;" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-510" y="150" width="220" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-40" value="シナリオ変換プログラムで、こんな感じのnlohman::jsonに変換して登録する" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="180" width="200" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-50" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-36" target="3_WvbCSFTcX0JYTVrm3E-38">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-51" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-42" target="3_WvbCSFTcX0JYTVrm3E-49">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-54" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-52" target="3_WvbCSFTcX0JYTVrm3E-53">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-62" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-61" target="3_WvbCSFTcX0JYTVrm3E-55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-67" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="3_WvbCSFTcX0JYTVrm3E-63" target="3_WvbCSFTcX0JYTVrm3E-66">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-68" value="シナリオ生成プログラムが色々やってる中で、登録APIを自由に叩いてもらう。" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="680" y="160" width="200" height="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-69" value="シナリオ登録API&lt;div&gt;引数：&lt;/div&gt;&lt;div&gt;- シナリオ名&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="800" y="240" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-70" value="シナリオ詳細登録API&lt;div&gt;引数&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- シナリオシーケンス&lt;/div&gt;&lt;div&gt;- シーケンス&lt;/div&gt;&lt;div&gt;- アイテム名&lt;/div&gt;&lt;div&gt;- アイテム値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="360" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-71" value="シナリオ実行条件登録API&lt;div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- シナリオシーケンス&lt;/div&gt;&lt;div&gt;- 左辺値&lt;/div&gt;&lt;div&gt;- 演算子&lt;/div&gt;&lt;div&gt;- 右辺値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="800" y="520" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-72" value="シナリオ終了条件登録API&lt;div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- シナリオシーケンス&lt;/div&gt;&lt;div&gt;- 左辺値&lt;/div&gt;&lt;div&gt;- 演算子&lt;/div&gt;&lt;div&gt;- 右辺値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="800" y="680" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-73" value="パラメータ登録API&lt;div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- パラメータGID&lt;/div&gt;&lt;div&gt;- パラメータ名&lt;/div&gt;&lt;div&gt;- パラメータ値&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="800" y="840" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-74" value="&lt;div&gt;&lt;div&gt;シナリオパラメータテーブル処理&lt;/div&gt;&lt;div&gt;引数&lt;/div&gt;&lt;/div&gt;&lt;div&gt;- 天候ID&lt;/div&gt;&lt;div&gt;- 路面ID&lt;/div&gt;&lt;div&gt;- パラメータGID&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1000" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-75" value="パターン3&lt;div&gt;1と2の間&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="40" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-76" value="" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="160" width="200" height="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-83" value="わざわざ中途半端な間を作るぐらいなら最初から1か2をやった方がいい" style="shape=callout;whiteSpace=wrap;html=1;perimeter=calloutPerimeter;" vertex="1" parent="1">
+          <mxGeometry x="1240" y="110" width="160" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-84" value="シナリオを中途半端に作るAPI&lt;div&gt;引数&lt;/div&gt;&lt;div&gt;- 中途半端なシナリオ情報&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="1160" y="240" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3_WvbCSFTcX0JYTVrm3E-85" value="シナリオ実行条件登録API&lt;div&gt;引数：&lt;/div&gt;&lt;div&gt;- シナリオID&lt;/div&gt;&lt;div&gt;- 機器ID&lt;/div&gt;&lt;div&gt;- etc...&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;align=left;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="800" y="1120" width="200" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
